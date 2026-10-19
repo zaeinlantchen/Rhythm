@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#8280ff" stroke-width="1" stroke-linecap="square" stroke-linejoin="round">
+  
+  <!-- 整体居中并放大：缩放1.6倍，并向右下方平移 -->
+  <g transform="translate(0.8, -6.4) scale(1.6)">
+    <!-- 左侧：言字旁（讠） -->
+    <!-- 1. 点 -->
+    <path stroke-linecap="round" stroke-linejoin="round" d="M 2 5 L 4 7" />
+    
+    <!-- 2. 横折提 -->
+    <path d="M 1 9 L 4 9 L 3.5 17.5 L 5 16" />
+
+    <!-- 右侧：司 -->
+    <!-- 横折 -->
+    <path stroke-linecap="round" d="M 5.5 6 L 13 6 L 13 18 L 10.5 17.5" />
+    <!-- 中间短横 -->
+    <path stroke-linecap="round" d="M 6 8 L 11.5 8" />
+    <!-- 内部的“口” (圆角矩形) -->
+    <rect x="6.5" y="11" width="4" height="4.5" rx="0" />
+  </g>
+  
+</svg>

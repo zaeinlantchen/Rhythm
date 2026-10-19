@@ -1,0 +1,265 @@
+/* ========== 全局 ========== */
+QWidget {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-size: 13px;
+}
+
+#topBar {
+    background: transparent;
+}
+
+#searchInput {
+    background: transparent;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 4px 12px;
+}
+#searchInput:focus {
+    border-color: #33dfcb;
+}
+
+/* ========== 左侧导航 ========== */
+#navList {
+    border-right: 1px solid #e0e0e0;
+    outline: none;
+    background: transparent;
+}
+#navList::item {
+    height: 36px;
+    padding-left: 16px;
+    color: #333;
+}
+#navList::item:selected {
+    color: #9570ce;
+}
+
+/* ========== 歌曲卡片列表 ========== */
+#songsList {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+#songsList::item {
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+}
+#songsList::item:selected {
+    background: transparent;   /* 选中态由 SongCard 自绘 hover，或可另加规则 */
+}
+#songsList::item:hover {
+    background: transparent;
+}
+
+#songsList QLabel {
+    color: #333;
+}
+
+#coverLabel {
+    background: transparent;
+}
+
+QHeaderView::section {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 6px;
+    color: #666;
+}
+
+/* ========== 播放队列 ========== */
+#queueList {
+    border-left: 1px solid #e0e0e0;
+    outline: none;
+    background: transparent;
+}
+
+#queueList::item {
+    border-radius: 6px;
+    padding: 0;
+    margin: 2px 4px;
+}
+
+#queueList::item:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+#queueList::item:selected {
+    background: rgba(51, 223, 203, 0.15);
+}
+
+/* 队列里每一行的文字 */
+#queueItemTitle {
+    color: #222;
+    font-size: 13px;
+    font-weight: normal;
+}
+#queueItemArtist {
+    color: #888;
+    font-size: 11px;
+}
+
+/* 当前播放项：标题加粗、变品牌色 */
+#queueItemTitle[playing="true"] {
+    color: #0cb09d;
+    font-weight: bold;
+}
+#queueItemArtist[playing="true"] {
+    color: #0cb09d;
+}
+
+/* 左侧播放指示条 */
+#queueItemMarker {
+    background: transparent;
+    border-radius: 2px;
+}
+#queueItemMarker[playing="true"] {
+    background: #0cb09d;
+}
+
+#lyricsView {
+    background: transparent;
+    border: none;
+}
+
+/* ========== 进度条：正常细线，hover 粗线 + 手柄 ========== */
+
+#progressSlider {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== 模式切换 / 音量 / 队列按钮 ========== */
+#wordBtn, #volumeBtn, #queueListBtn, #playmode {
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+}
+
+#wordBtn::menu-indicator,
+#volumeBtn::menu-indicator,
+#queueListBtn::menu-indicator,
+#playmode::menu-indicator,
+#menuBtn::menu-indicator {
+    image: none;
+    width: 0;
+    height: 0;
+}
+
+QToolButton:hover {
+    border: none;
+}
+
+#settingsTitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 4px;
+}
+#settingsHint {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+#scanStatusLabel {
+    color: #0cb09d;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+#pageSettings QLineEdit {
+    background: #fafafa;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #333;
+}
+#pageSettings QLineEdit:focus {
+    border-color: #33dfcb;
+    background: #ffffff;
+}
+
+#pageSettings QPushButton {
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 5px 14px;
+    color: #333;
+}
+#pageSettings QPushButton:hover {
+    background: #f5f5f5;
+    border-color: #33dfcb;
+}
+#pageSettings QPushButton:pressed {
+    background: #e8f5f2;
+}
+
+#settingsSaveBtn {
+    background: #33dfcb;
+    border: none;
+    color: #ffffff;
+    padding: 6px 24px;
+}
+#settingsSaveBtn:hover {
+    background: #2bc8b5;
+}
+#settingsSaveBtn:pressed {
+    background: #22a99a;
+}
+
+#appToast {
+    background: rgba(30, 30, 30, 0.85);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+#playlistSectionTitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    padding: 2px 0;
+}
+
+#playlistsList, #playlistSongsList {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+#playlistsList::item, #playlistSongsList::item {
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 4px;
+    color: #333;
+}
+#playlistsList::item:hover, #playlistSongsList::item:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+#playlistsList::item:selected, #playlistSongsList::item:selected {
+    background: #e8f5f2;
+    color: #0cb09d;
+}
+
+#pagePlaylist QPushButton {
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 5px 14px;
+    color: #333;
+}
+#pagePlaylist QPushButton:hover {
+    background: #f5f5f5;
+    border-color: #33dfcb;
+}
+#pagePlaylist QPushButton:pressed {
+    background: #e8f5f2;
+}
+
+QMainWindow, #centralwidget {
+    background: transparent;
+}
+
+#playerBar {
+    background: rgba(255, 255, 255, 0.85); /* 85% 白色 */
+}

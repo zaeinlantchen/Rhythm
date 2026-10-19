@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/style">
+        <file>Rhythm.qss</file>
+        <file>Titlebar.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>next.svg</file>
+        <file>pause.svg</file>
+        <file>play.svg</file>
+        <file>prev.svg</file>
+        <file>volume-mute.svg</file>
+        <file>volume-notice.svg</file>
+        <file>setting.svg</file>
+        <file>maximize.svg</file>
+        <file>restore.svg</file>
+        <file>close.svg</file>
+        <file>close-hover.svg</file>
+        <file>maximize-hover.svg</file>
+        <file>minimize.svg</file>
+        <file>minimize-hover.svg</file>
+        <file>restore-hover.svg</file>
+        <file>setting-hover.svg</file>
+        <file>music-list.svg</file>
+        <file>music-list-hover.svg</file>
+        <file>volume-mute-hover.svg</file>
+        <file>volume-notice-hover.svg</file>
+        <file>volume-small.svg</file>
+        <file>volume-small-hover.svg</file>
+        <file>cycle-one.svg</file>
+        <file>switch.svg</file>
+        <file>cycle-all.svg</file>
+        <file>shuffle.svg</file>
+        <file>cycle-one-hover.svg</file>
+        <file>cycle-all-hover.svg</file>
+        <file>shuffle-hover.svg</file>
+        <file>switch-hover.svg</file>
+        <file>word.svg</file>
+        <file>word-active.svg</file>
+        <file>word-hover.svg</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>record.png</file>
+    </qresource>
+    <qresource prefix="/site">
+        <file>icon.ico</file>
+    </qresource>
+</RCC>

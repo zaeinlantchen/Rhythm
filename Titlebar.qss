@@ -1,0 +1,24 @@
+/* ========== 标题栏（渐变 + 搜索框） ========== */
+#TitleBar {
+    background: transparent;
+}
+
+#topBar {
+    background: transparent;
+}
+
+/* ========== TitleBar 内的按钮 ========== */
+#TitleBar QToolButton {
+    border: none;
+    background: transparent;
+}
+
+#TitleBar QToolButton::menu-indicator {
+    image: none;
+    width: 0;
+    height: 0;
+}
+
+#TitleBar QToolButton:hover {
+    border: none;
+}

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(Rhythm LANGUAGES CXX)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Multimedia Sql Network Concurrent)
+find_package(Qt6 6.8 REQUIRED COMPONENTS Core Widgets Multimedia Sql Network Concurrent)
 
 set(CMAKE_AUTORCC ON)
 
